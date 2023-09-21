@@ -1,1 +1,123 @@
-/* add styling here */
+@font-face {
+    font-family: 'blox';
+    src: url(./Blox2.ttf);
+}
+.hidden {
+    visibility: hidden
+  }
+
+#controller{
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+    /* background-color: grey; */
+}
+
+button {
+    font-size: larger;
+    padding: 10px;
+}
+
+.game-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'blox';
+    color: aliceblue;
+    font-size: 35px;
+    text-shadow: 2px 2px #ff0000;
+}
+
+header {
+    /* background-color: grey; */
+    
+    /* height: 200px;
+    background-color: red; 
+    background-image: linear-gradient(red, yellow); */ 
+}
+
+body {
+    background-color: red; 
+    background-image: linear-gradient(red, yellow);
+    animation: fadeBackground 6s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes fadeBackground {
+    from { background-color: #FCE97F; }
+    to { background-color: #2EB07B; }
+  }
+
+#play {
+    background-color: #008CBA;
+    font-family: 'blox';
+}
+#play:hover{
+    background-color: rgb(241, 237, 237);
+}
+
+#feed {
+    background-color: #04662d;
+    font-family: 'blox';
+}
+#feed:hover{
+    background-color: rgb(241, 237, 237);
+}
+
+#sleep {
+    background-color: #0a0a0a;
+    color: beige;
+    font-family: 'blox';
+}
+#sleep:hover{
+    background-color: rgb(241, 237, 237);
+}
+
+#restart {
+    background-color: red;
+    font-family: 'blox';
+}
+
+#boredom-stat {
+    font-family: 'blox';
+}
+
+#hunger-stat {
+    font-family: 'blox';
+}
+#sleepiness-stat {
+    font-family: 'blox';
+}
+
+
+.game-graphic {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

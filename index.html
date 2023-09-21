@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tamagotchi Lab</title>
+    <title> Sages Tamagotchi</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/main.js" defer></script>
   </head>
 
   <body>
     <header>
-      <h1 class="game-title">Tamagotchi Code Along</h1>
+      <h1 class="game-title">Tamagotchi</h1>
     </header>
 
     <main class="container">
       <!-- game interface / UI section -->
       <section id="controller" class="button-wrapper">
-        <button>play</button>
-        <button>feed</button>
-        <button>sleep</button>
+        <button id="play">play</button>
+        <button id="feed">feed</button>
+        <button id="sleep">sleep</button>
       </section>
 
       <!-- game data section -->
@@ -30,8 +30,14 @@
 
       <!-- game display / messaging section -->
       <section id="game-state" class="game-state-wrapper">
-        <h2 id="tama-message" class="hidden">
-          Oh no! <span id="message-content">You starved!</span>
+        <h2 id="tama-message0" class="hidden">
+          Oh no! <span id="message-contentfood">You starved!</span>
+        </h2>
+        <h2 id="tama-message1" class="hidden">
+          Oh no! <span id="message-contentsad">You died of saddnes!</span>
+        </h2>
+        <h2 id="tama-message2" class="hidden">
+          Oh no! <span id="message-contenttired">You died of sleepyness!</span>
         </h2>
         <img id="tama-graphic" src="../assets/wolf-1.png" class="game-graphic" />
         <button id="restart" class="hidden">Play Again</button>
