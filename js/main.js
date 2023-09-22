@@ -88,9 +88,10 @@ function gameOver() {
 function runGame() {
     cycles++;
 
-    const requestAnitmationFrame = (() => {
-        tamaGraphic.style.fadeIn = "fadeIn" ;
-    })
+    // const requestAnitmationFrame = (() => {
+    //     tamaGraphic.style.fadeIn = "fadeIn" ;
+    // })
+    // requestAnitmationFrame()
     
   
     if (continueGame()) {
@@ -157,7 +158,7 @@ function init() {
     age = 0; // integer
     cycles = 0; // integer
   
-    interval = 1000; // integer
+    interval = 3000; // integer
     timer = setInterval(runGame, interval); // object
 
     function resetUI() {
@@ -172,7 +173,7 @@ function init() {
         //grabbing css
         
         //tamaGraphic.classList.add("game-graphic");
-        tamaGraphic.style.fadeIn = "none";
+        //tamaGraphic.style.fadeIn = "none";
     }
     resetUI();
     
